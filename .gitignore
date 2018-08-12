@@ -2,7 +2,6 @@ docs/build
 
 # Logs
 logs
-*.log
 npm-debug.log*
 package-lock.json
 
