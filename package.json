@@ -11,8 +11,7 @@
     "copy:fonts": "cpx \"./node_modules/source-sans-pro/**/*\" ./dist/fonts",
     "copy:json": "cpx \"./src/*.json\" ./dist",
     "dev-server": "webpack-dev-server --host=0.0.0.0 --content-base dist/ --history-api-fallback",
-    "dev": "npm-run-all clean --parallel copy:* dev-server",
-    "validate": "npm ls"
+    "dev": "npm-run-all clean --parallel copy:* dev-server"
   },
   "repository": {
     "type": "git",
@@ -25,7 +24,9 @@
   },
   "homepage": "https://github.com/LieAlbertTriAdrian/aws-vizceral#readme",
   "dependencies": {
+    "aws-sdk": "^2.291.0",
     "bootstrap": "^3.3.7",
+    "csv-parse": "^2.5.0",
     "flux": "^3.1.0",
     "hammerjs": "^2.0.8",
     "jquery": "^3.1.1",
@@ -43,10 +44,9 @@
     "source-sans-pro": "^2.0.10",
     "superagent": "^3.0.0",
     "tween.js": "^16.3.5",
+    "underscore": "^1.9.1",
     "vizceral-react": "~4.5.5",
-    "webfontloader": "^1.6.26",
-    "csv-parse": "^2.5.0",
-    "underscore": "^1.9.1"
+    "webfontloader": "^1.6.26"
   },
   "devDependencies": {
     "babel-core": "^6.18.0",
