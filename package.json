@@ -1,0 +1,23 @@
+{
+  "name": "aws-vizceral",
+  "version": "1.0.0",
+  "description": "Visualize your network diagram from AWS to vizceral",
+  "main": "test.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LieAlbertTriAdrian/aws-vizceral.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LieAlbertTriAdrian/aws-vizceral/issues"
+  },
+  "homepage": "https://github.com/LieAlbertTriAdrian/aws-vizceral#readme",
+  "dependencies": {
+    "csv-parse": "^2.5.0",
+    "underscore": "^1.9.1"
+  }
+}
