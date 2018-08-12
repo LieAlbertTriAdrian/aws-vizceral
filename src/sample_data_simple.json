@@ -1,0 +1,119 @@
+{
+  "renderer": "global",
+  "name": "edge",
+  "nodes": [
+    {
+      "renderer": "region",
+      "name": "INTERNET",
+      "class": "normal"
+    },
+    {
+      "renderer": "region",
+      "name": "us-west-2",
+      "maxVolume": 50000,
+      "class": "normal",
+      "updated": 1466838546805,
+      "nodes": [
+        {
+          "name": "INTERNET",
+          "renderer": "focusedChild",
+          "class": "normal"
+        },
+        {
+          "name": "api-gateway",
+          "renderer": "focusedChild",
+          "class": "normal"
+        },
+        {
+          "name": "service-a",
+          "renderer": "focusedChild",
+          "class": "normal"
+        },
+        {
+          "name": "service-d",
+          "renderer": "focusedChild",
+          "class": "normal"
+        },
+        {
+          "name": "service-c",
+          "renderer": "focusedChild",
+          "class": "normal"
+        },
+        {
+          "name": "service-b",
+          "renderer": "focusedChild",
+          "class": "normal"
+        }        
+      ],
+      "connections": [
+        {
+          "source": "INTERNET",
+          "target": "api-gateway",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 15598.906
+          },
+          "class": "normal"
+        },
+        {
+          "source": "api-gateway",
+          "target": "service-a",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 15598.906
+          },
+          "class": "normal"
+        },
+        {
+          "source": "api-gateway",
+          "target": "service-b",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 15598.906
+          },
+          "class": "normal"
+        },
+        {
+          "source": "service-b",
+          "target": "service-c",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 15598.906
+          },
+          "class": "normal"
+        },        
+        {
+          "source": "service-a",
+          "target": "service-d",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 15598.906
+          },
+          "class": "normal"
+        },
+        {
+          "source": "service-d",
+          "target": "service-c",
+          "metrics": {
+            "danger": 116.524,
+            "normal": 15598.906
+          },
+          "class": "normal"
+        }                
+      ]
+    }
+  ],
+  "connections": [
+    {
+      "source": "INTERNET",
+      "target": "us-west-2",
+      "metrics": {
+        "normal": 26037.626,
+        "danger": 92.37
+      },
+      "notices": [
+      ],
+      "class": "normal"
+    }
+  ]
+}
