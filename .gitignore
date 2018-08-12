@@ -3,6 +3,8 @@ docs/build
 # Logs
 logs
 *.log
+*.json
+
 npm-debug.log*
 package-lock.json
 
